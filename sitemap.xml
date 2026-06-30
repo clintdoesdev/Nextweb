@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nextelwebsite.com/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-connect-brand-cover.jpg</image:loc>
+      <image:title>Nextel Connect — Your World, Your Network</image:title>
+      <image:caption>Nextel Connect brand emblem on a dark green and gold abstract background.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-what-is-virtual-telecom.jpg</image:loc>
+      <image:title>What Nextel Is</image:title>
+      <image:caption>Nextel is a regulated, NCC-compliant virtual telecom service provider.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-cac-certificate-licensed-regulated.jpg</image:loc>
+      <image:title>Nextel CAC Certificate of Registration</image:title>
+      <image:caption>Nextel Network CAC Certificate of Registration, Business Name No. 9628017.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-revenue-streams-explained.jpg</image:loc>
+      <image:title>How Does Nextel Generate Revenue</image:title>
+      <image:caption>Six revenue streams that fund Nextel subscriber rewards.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-esim-plans-diamond-royal-pricing.jpg</image:loc>
+      <image:title>Nextel eSIM Categories — Diamond and Royal Pricing</image:title>
+      <image:caption>Official pricing breakdown for Nextel Diamond eSIM and Royal eSIM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-esim-free-calls-airtime-data.jpg</image:loc>
+      <image:title>Free Calls, Airtime and Data with Nextel eSIM</image:title>
+      <image:caption>Earn every day, make free calls, and enjoy free airtime and data with a Nextel eSIM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-vcard-verve-earn-from-calls.jpg</image:loc>
+      <image:title>Nextel V-Card — Earn From Calls, Spend Anywhere</image:title>
+      <image:caption>Nextel V-Card powered by Verve lets you spend your call earnings anywhere in the world.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-website-revenue-app-light.jpg</image:loc>
+      <image:title>Nextel My Website Dashboard</image:title>
+      <image:caption>Ads Center and audience reach analytics on a Nextel personal website page.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-website-revenue-app-dark.jpg</image:loc>
+      <image:title>Your Website, Your Revenue, Everyday</image:title>
+      <image:caption>Turn your personal Nextel page into a daily income machine with Google ads.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-incentives-achievement-rewards.jpg</image:loc>
+      <image:title>Nextel Incentives and Achievement Rewards</image:title>
+      <image:caption>Hitting a referral target earns massive bonuses, gadgets, and trips.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-partners-mtn-glo-airtel.jpg</image:loc>
+      <image:title>Nextel Partners — MTN, Glo, Airtel</image:title>
+      <image:caption>Nextel's legally binding partnerships with MTN, Glo, Airtel, 9Mobile, StarTimes, DStv, GOtv and PHCN.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-cloud-dashboard-earnings.jpg</image:loc>
+      <image:title>Nextel Cloud Dashboard</image:title>
+      <image:caption>Track total earnings, virtual line status, and phonebook call rewards in Nextel Cloud.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-free-pos-terminal-verified-subscriber.jpg</image:loc>
+      <image:title>Free Nextel POS Terminal</image:title>
+      <image:caption>Verified Nextel subscribers qualify for a free POS terminal to operate a business.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nextelwebsite.com/assets/images/nextel-esim-product-shot.jpg</image:loc>
+      <image:title>Nextel eSIM Product Shot</image:title>
+      <image:caption>Nextel eSIM card, your world, your network.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nextelwebsite.com/privacy-policy.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://nextelwebsite.com/terms-of-use.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://nextelwebsite.com/disclaimer.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+</urlset>
