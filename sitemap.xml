@@ -78,6 +78,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://nextelwebsite.com/nextel-platform.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nextelwebsite.com/how-to-activate.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://nextelwebsite.com/privacy-policy.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>yearly</changefreq>
