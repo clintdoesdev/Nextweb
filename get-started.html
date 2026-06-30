@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Nextel Connect — Get Started</title>
+<meta name="description" content="Get started with Nextel Connect. Tap the button below to join our official Telegram channel and begin your eSIM registration today."/>
+<link rel="canonical" href="https://nextelwebsite.com/get-started.html"/>
+<meta name="theme-color" content="#040d06"/>
+<link rel="icon" href="/assets/logo/nextel-logo-icon.svg" type="image/svg+xml"/>
+<link rel="shortcut icon" href="/assets/icons/favicon.ico"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--green:#2ddc6e;--line:rgba(45,220,110,.22);}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;font-family:'Outfit',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;}
+body{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:24px 16px;background:radial-gradient(1200px 700px at 20% 10%,rgba(45,220,110,.12),transparent 60%),linear-gradient(180deg,#050f07,#040d06);overflow:hidden;}
+.glow{position:fixed;width:480px;height:480px;transform:translate(-50%,-50%);pointer-events:none;background:radial-gradient(circle,rgba(45,220,110,.20),rgba(45,220,110,.08),transparent 65%);filter:blur(18px);mix-blend-mode:screen;opacity:0;transition:opacity .25s ease;z-index:0;}
+.wrap{width:min(480px,100%);text-align:center;padding:28px;border-radius:24px;background:rgba(45,220,110,.05);border:1px solid var(--line);backdrop-filter:blur(14px);box-shadow:0 30px 90px rgba(0,0,0,.70);position:relative;z-index:1;}
+.brand{font-size:1.7rem;font-weight:900;color:var(--green);letter-spacing:-.5px;text-shadow:0 0 20px rgba(45,220,110,.35);margin-bottom:18px;display:block;text-decoration:none;}
+h1{font-size:1.1rem;font-weight:800;margin:8px 0 6px;}
+.subtitle{font-size:.88rem;color:rgba(255,255,255,.62);max-width:38ch;margin:0 auto;line-height:1.55;}
+.links{margin-top:24px;display:flex;flex-direction:column;gap:14px;}
+.btn{display:flex;align-items:center;justify-content:space-between;padding:15px 16px;border-radius:16px;text-decoration:none;color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(45,220,110,.20);transition:.18s ease;}
+.btn:hover{transform:translateY(-1px);border-color:rgba(45,220,110,.55);box-shadow:0 10px 32px rgba(45,220,110,.10);}
+.left{display:flex;gap:13px;align-items:center;text-align:left;}
+.ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:1.2rem;background:linear-gradient(135deg,rgba(45,220,110,.16),rgba(45,220,110,.06));border:1px solid rgba(45,220,110,.20);}
+.btn-label{font-weight:800;font-size:.93rem;}
+.btn-note{font-size:.76rem;color:rgba(255,255,255,.52);margin-top:2px;line-height:1.4;}
+.arrow{opacity:.8;font-size:1.1rem;}
+.foot{margin-top:18px;font-size:.74rem;color:rgba(255,255,255,.35);}
+</style>
+</head>
+<body>
+<div class="glow" id="glow"></div>
+<main class="wrap">
+  <a href="/" class="brand" aria-label="Nextel Connect home">NEXTEL CONNECT</a>
+  <h1>Welcome to Nextel Connect</h1>
+  <p class="subtitle">Tap below to get started. Join our official Telegram channel to begin your eSIM registration.</p>
+  <div class="links" id="links">
+    <a class="btn" href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener noreferrer">
+      <div class="left">
+        <div class="ico">📣</div>
+        <div>
+          <div class="btn-label">Telegram</div>
+          <div class="btn-note">Tap to start your Nextel registration on Telegram</div>
+        </div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
+    <a class="btn" href="/register.html">
+      <div class="left">
+        <div class="ico">📝</div>
+        <div>
+          <div class="btn-label">Registration Form</div>
+          <div class="btn-note">Fill your details and continue to Telegram</div>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
+    <a class="btn" href="/payments.html">
+      <div class="left">
+        <div class="ico">💳</div>
+        <div>
+          <div class="btn-label">Payment Guide</div>
+          <div class="btn-note">See payment details for Diamond and Royal eSIM</div>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
+  </div>
+  <p class="foot">© 2026 Nextel Network · CAC BN No. 9628017 · nextelwebsite.com</p>
+</main>
+<script>
+const glow=document.getElementById('glow');
+let x=innerWidth/2,y=innerHeight/2,tx=x,ty=y;
+addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;glow.style.opacity=1;});
+function loop(){x+=(tx-x)*.12;y+=(ty-y)*.12;glow.style.left=x+'px';glow.style.top=y+'px';requestAnimationFrame(loop);}
+loop();
+</script>
+</body>
+</html>
