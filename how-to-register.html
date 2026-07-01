@@ -192,6 +192,11 @@
   .activate-hero{padding:60px 0 40px;}
   .act-section{padding:44px 0;}
 }
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -225,7 +230,7 @@
   </ul>
   <div class="nav-actions">
     <button class="btn-outline">Log in</button>
-    <a href="/#plans" class="btn-gold">Get eSIM</a>
+    <a href="/register.html" class="btn-gold">Register</a>
     <button class="hamburger" id="ham" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -241,7 +246,7 @@
     <li><a href="/#partners" onclick="closeMenu()">Partners</a></li>
     <li><a href="/#faq" onclick="closeMenu()">FAQ</a></li>
   </ul>
-  <a href="/#plans" class="d-cta" onclick="closeMenu()">Get Your eSIM Now →</a>
+  <a href="/register.html" class="d-cta" onclick="closeMenu()">Register Now →</a>
 </div>
 
 <main id="main">
@@ -341,7 +346,7 @@
         <div class="plan-feature"><span class="pf-dot">✓</span><span>0.4% turnover commission daily</span></div>
         <div class="plan-feature"><span class="pf-dot">✓</span><span>Free calls, airtime &amp; data</span></div>
         <div class="plan-feature"><span class="pf-dot">✓</span><span>Nextel V-Card (Verve-powered)</span></div>
-        <a href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener" class="plan-cta">Register — Diamond eSIM</a>
+        <a href="/register.html?plan=Diamond" class="plan-cta">Register — Diamond eSIM</a>
       </div>
       <div class="plan-card royal">
         <div class="plan-badge">Best Value</div>
@@ -355,7 +360,7 @@
         <div class="plan-feature"><span class="pf-dot">✓</span><span>Saved contacts ₦72 each</span></div>
         <div class="plan-feature"><span class="pf-dot">✓</span><span>1% turnover commission daily</span></div>
         <div class="plan-feature"><span class="pf-dot">✓</span><span>Free calls, airtime, data + POS terminal</span></div>
-        <a href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener" class="plan-cta">Register — Royal eSIM</a>
+        <a href="/register.html?plan=Royal" class="plan-cta">Register — Royal eSIM</a>
       </div>
     </div>
   </div>
@@ -412,8 +417,8 @@
       <h2>Ready to register for your Nextel eSIM?</h2>
       <p>Start from the official Nextel Connect plans page and follow the secure activation instructions. Daily earnings start the moment you activate.</p>
       <div class="act-cta-btns">
-        <a href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener" class="btn-gold">Register on Telegram</a>
-        <a href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener" class="btn-ghost" style="font-size:14px;padding:13px 22px;">Join Telegram</a>
+        <a href="/register.html" class="btn-gold">Register Now</a>
+        <a href="/payments.html" class="btn-ghost" style="font-size:14px;padding:13px 22px;">View Plans &amp; Fees</a>
       </div>
     </div>
   </div>
@@ -506,5 +511,8 @@ window.addEventListener('scroll', () => {
   document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 40);
 });
 </script>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>

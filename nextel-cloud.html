@@ -124,6 +124,11 @@ a{color:inherit;text-decoration:none;}
 
 /* footer */
 .site-footer{text-align:center;font-size:.72rem;color:rgba(255,255,255,.28);padding-top:8px;}
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -238,9 +243,9 @@ a{color:inherit;text-decoration:none;}
   <section class="glass cta-card">
     <h2>Access Nextel <span class="g-text">Cloud</span></h2>
     <p>Nextel Cloud access comes with every eSIM plan. Register for Diamond or Royal eSIM on Telegram and get your Cloud dashboard credentials today.</p>
-    <a class="btn-main" href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
-      Get Nextel Cloud Access
+    <a class="btn-main" href="/register.html">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Register to Get Cloud Access
     </a>
     <br/>
     <a class="btn-outline" href="/register.html">
@@ -275,7 +280,10 @@ a{color:inherit;text-decoration:none;}
 
   <p class="site-footer">© 2026 Nextel Network · CAC BN No. 9628017 · <a href="/" style="color:rgba(45,220,110,.7)">nextelwebsite.com</a></p>
 </div>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <script>
+(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();
 function toggleFaq(item){
   const isOpen=item.classList.contains('open');
   document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});

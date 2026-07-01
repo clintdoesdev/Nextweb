@@ -31,6 +31,11 @@ h1{font-size:1.1rem;font-weight:800;margin:8px 0 6px;}
 .btn-note{font-size:.76rem;color:rgba(255,255,255,.52);margin-top:2px;line-height:1.4;}
 .arrow{opacity:.8;font-size:1.1rem;}
 .foot{margin-top:18px;font-size:.74rem;color:rgba(255,255,255,.35);}
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -38,24 +43,14 @@ h1{font-size:1.1rem;font-weight:800;margin:8px 0 6px;}
 <main class="wrap">
   <a href="/" class="brand" aria-label="Nextel Connect home">NEXTEL CONNECT</a>
   <h1>Welcome to Nextel Connect</h1>
-  <p class="subtitle">Tap below to get started. Join our official Telegram channel to begin your eSIM registration.</p>
+  <p class="subtitle">Tap below to get started. Fill the registration form to begin your Nextel eSIM activation.</p>
   <div class="links" id="links">
-    <a class="btn" href="https://t.me/m/NMX8U16LMGE0" target="_blank" rel="noopener noreferrer">
+    <a class="btn" href="/register.html" style="background:rgba(45,220,110,.12);border-color:rgba(45,220,110,.45);">
       <div class="left">
-        <div class="ico">📣</div>
+        <div class="ico">🚀</div>
         <div>
-          <div class="btn-label">Telegram</div>
-          <div class="btn-note">Tap to start your Nextel registration on Telegram</div>
-        </div>
-      </div>
-      <div class="arrow">↗</div>
-    </a>
-    <a class="btn" href="/register.html">
-      <div class="left">
-        <div class="ico">📝</div>
-        <div>
-          <div class="btn-label">Registration Form</div>
-          <div class="btn-note">Fill your details and continue to Telegram</div>
+          <div class="btn-label">Register Now</div>
+          <div class="btn-note">Fill your details — we connect you to Telegram for activation</div>
         </div>
       </div>
       <div class="arrow">→</div>
@@ -70,6 +65,16 @@ h1{font-size:1.1rem;font-weight:800;margin:8px 0 6px;}
       </div>
       <div class="arrow">→</div>
     </a>
+    <a class="btn" href="/how-to-register.html">
+      <div class="left">
+        <div class="ico">📖</div>
+        <div>
+          <div class="btn-label">Registration Guide</div>
+          <div class="btn-note">Step-by-step guide to activating your Nextel eSIM</div>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+    </a>
   </div>
   <p class="foot">© 2026 Nextel Network · CAC BN No. 9628017 · nextelwebsite.com</p>
 </main>
@@ -80,5 +85,8 @@ addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;glow.style.opacity=1;
 function loop(){x+=(tx-x)*.12;y+=(ty-y)*.12;glow.style.left=x+'px';glow.style.top=y+'px';requestAnimationFrame(loop);}
 loop();
 </script>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>

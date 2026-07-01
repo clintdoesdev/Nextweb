@@ -33,6 +33,11 @@ ul li::before{content:'';width:5px;height:5px;border-radius:50%;background:#2ddc
 .cta:hover{opacity:.9;transform:translateY(-1px);}
 .note{text-align:center;font-size:.72rem;color:rgba(255,255,255,.35);margin-top:.9rem;}
 footer{margin-top:1.8rem;font-size:.7rem;color:rgba(255,255,255,.28);text-align:center;}
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -55,11 +60,14 @@ footer{margin-top:1.8rem;font-size:.7rem;color:rgba(255,255,255,.28);text-align:
       <li>Free calls, airtime, data + free POS terminal</li>
       <li>₦14,000 connect bonus on activation</li>
     </ul>
-    <a href="https://t.me/m/NMX8U16LMGE0" class="cta" target="_blank" rel="noopener">Upgrade to Royal on Telegram</a>
-    <p class="note">Secure upgrade · Contact official Telegram for instructions</p>
+    <a href="/register.html?plan=Royal" class="cta">Register — Upgrade to Royal eSIM</a>
+    <p class="note">Fill the registration form and you'll be connected to Telegram for activation</p>
   </div>
 </div>
 
 <footer>© 2026 Nextel Network · CAC BN No. 9628017 · nextelwebsite.com</footer>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>
