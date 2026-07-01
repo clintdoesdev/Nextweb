@@ -89,6 +89,9 @@ label{display:block;font-weight:600;font-size:.86rem;color:var(--w80);margin-bot
 .safety-card strong{color:#fff;}
 .help{text-align:center;font-size:.84rem;color:var(--w60);padding-top:16px;}
 .help a{color:var(--green);border-bottom:1px solid rgba(45,220,110,.3);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -169,5 +172,7 @@ label{display:block;font-weight:600;font-size:.86rem;color:var(--w80);margin-bot
   });
 })();
 </script>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>

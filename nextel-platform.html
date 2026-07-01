@@ -207,6 +207,11 @@
   .platform-hero{padding:60px 0 40px;}
   .plat-section{padding:44px 0;}
 }
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -240,7 +245,7 @@
   </ul>
   <div class="nav-actions">
     <button class="btn-outline">Log in</button>
-    <a href="/#plans" class="btn-gold">Get eSIM</a>
+    <a href="/register.html" class="btn-gold">Register</a>
     <button class="hamburger" id="ham" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -256,7 +261,7 @@
     <li><a href="/#partners" onclick="closeMenu()">Partners</a></li>
     <li><a href="/#faq" onclick="closeMenu()">FAQ</a></li>
   </ul>
-  <a href="/#plans" class="d-cta" onclick="closeMenu()">Get Your eSIM Now →</a>
+  <a href="/register.html" class="d-cta" onclick="closeMenu()">Register Now →</a>
 </div>
 
 <main id="main">
@@ -273,7 +278,7 @@
           This page explains what the Nextel Connect platform is, how Nextel eSIM works, what you should check before activating, and how to safely get started through the official Nextel website.
         </p>
         <div style="display:flex;gap:13px;flex-wrap:wrap;">
-          <a href="how-to-register.html" class="btn-gold">Activate Nextel eSIM</a>
+          <a href="/register.html" class="btn-gold">Register Now</a>
           <a href="#legit" class="btn-ghost" style="font-size:14px;padding:13px 22px;">Is Nextel Legit? →</a>
         </div>
         <div class="metrics-row" aria-label="Nextel platform highlights">
@@ -394,7 +399,7 @@
       <h2>Ready to activate your Nextel eSIM?</h2>
       <p>Start from the official Nextel Connect plans page and follow the secure activation instructions.</p>
       <div class="cta-btns">
-        <a href="how-to-register.html" class="btn-gold">See Activation Guide</a>
+        <a href="/register.html" class="btn-gold">Register Now</a>
         <a href="/#plans" class="btn-ghost" style="font-size:14px;padding:13px 22px;">View eSIM Plans</a>
       </div>
     </div>
@@ -531,5 +536,8 @@ window.addEventListener('scroll', () => {
   document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 40);
 });
 </script>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>

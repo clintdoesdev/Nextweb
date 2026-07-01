@@ -45,6 +45,11 @@ label{display:block;font-weight:600;font-size:.84rem;color:rgba(255,255,255,.80)
 .footnote{font-size:.74rem;color:rgba(255,255,255,.40);text-align:center;margin-top:9px;line-height:1.5;}
 .links{text-align:center;font-size:.82rem;color:var(--w60);padding-top:10px;}
 .links a{color:var(--green);text-decoration:underline;}
+.float-reg{position:fixed;right:16px;bottom:72px;z-index:9900;padding:10px 16px;border-radius:999px;background:linear-gradient(135deg,#2ddc6e,#22b356);color:#040d06;font-family:'Outfit',sans-serif;font-weight:900;font-size:.78rem;letter-spacing:.05em;text-decoration:none;box-shadow:0 6px 22px rgba(45,220,110,.38);transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.float-reg:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,220,110,.50);}
+#toTop{position:fixed;right:16px;bottom:20px;z-index:9900;width:40px;height:40px;border-radius:50%;background:rgba(10,22,12,.92);border:1px solid rgba(45,220,110,.28);color:#2ddc6e;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.35);transition:opacity .3s,transform .2s;opacity:0;pointer-events:none;backdrop-filter:blur(12px);}
+#toTop.show{opacity:1;pointer-events:auto;}
+#toTop:hover{transform:translateY(-2px);}
 </style>
 </head>
 <body>
@@ -111,5 +116,8 @@ label{display:block;font-weight:600;font-size:.84rem;color:rgba(255,255,255,.80)
   });
 })();
 </script>
+<a href="/register.html" class="float-reg" aria-label="Register for Nextel eSIM">+ Register</a>
+<button id="toTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>(function(){var t=document.getElementById('toTop');window.addEventListener('scroll',function(){t.classList.toggle('show',window.scrollY>300);});})();</script>
 </body>
 </html>
